@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<link rel="stylesheet" href="{{ '/css/application.css' | relative_url }}" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ '/css/vendor/twentytwenty/twentytwenty.css' | relative_url }}" type="text/css" media="screen" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="{{ '/js/vendor/twentytwenty/jquery.event.move.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/vendor/twentytwenty/jquery.twentytwenty.js' | relative_url }}" type="text/javascript"></script>
+	<script src="{{ '/js/application.js' | relative_url }}" type="text/javascript"></script>
+
+	<style media="screen">
+	.twentytwenty-before-label:before {
+		content: "{{ page.before_label }}" !important;
+	}
+	.twentytwenty-after-label:before {
+		content: "{{ page.after_label }}" !important;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="twentytwenty-container">
+		{{ content }}
+	</div>
+
+</body>
+</html>
